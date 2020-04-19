@@ -1,0 +1,76 @@
+.advice
+  padding-top: 58px
+  padding-bottom: 45px
+  &__title
+    margin-top: 0
+    margin-bottom: 16px
+    margin-right: 42px
+    font-size: 41px
+    font-weight: 700
+    line-height: 46px
+    color: #454545
+  &__subtitle
+    font-size: 14px
+    font-weight: 700
+    line-height: 28px
+    color: #454545
+  &-block
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    &__item
+  &-button
+    &__call
+      margin-right: 15px
+      margin-bottom: 8px
+      width: 206px
+      height: 49px
+      background-color: #c3759e
+      font-family: Roboto, sans-serif
+      font-size: 14px
+      font-weight: 700
+      line-height: 31px
+      text-transform: uppercase
+      color: #ffffff
+      &:hover
+        background-color: lighten(#c3759e, 5%)
+    &__sign-up
+      width: 206px
+      height: 49px
+      font-family: Roboto, sans-serif
+      font-size: 14px
+      font-weight: 700
+      line-height: 31px
+      text-transform: uppercase
+      background-color: #816890
+      color: #ffffff
+      &:hover
+        background-color: lighten(#816890, 5%)
+@media (max-width: 992px)
+  .advice
+    &-button
+      &__call
+        &:hover
+          background-color: lighten(#c3759e, 0%)
+      &__sign-up
+        &:hover
+          background-color: lighten(#816890, 0%)
+@media (max-width: 768px)
+  .advice
+    padding: 40px 0
+    &__subtitle
+      font-size: 12px
+      line-height: normal
+    &-block
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &:last-child
+          margin-bottom: 0
+  .advice__title
+    max-width: 360px
+    margin: auto
+    margin-bottom: 10px
+    font-size: 20px
+    line-height: normal
+  

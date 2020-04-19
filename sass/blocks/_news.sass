@@ -1,0 +1,233 @@
+.news
+  padding-top: 105px
+  padding-bottom: 97px
+  background-color: #f7f7f7 
+  &-video__link
+    margin-right: 15px
+    &:last-child
+      margin-right: 0
+  &__title
+    position: relative
+    margin-top: 0
+    margin-bottom: 90px
+    font-size: 41px
+    font-weight: 700
+    line-height: 46px
+    color: #454545
+    &:after
+      content: ''
+      position: absolute
+      bottom: -35px
+      left: 3px
+      display: block
+      width: 92px
+      height: 3px
+      background-color: #ebebeb
+  &-block
+    display: flex
+    &__item
+      display: flex
+      flex-direction: column
+      flex-basis: 50% 
+      &:first-child
+        margin-right: 20px
+    &-cards
+      display: flex
+      justify-content: space-between
+      &__item
+        display: flex
+        position: relative
+        max-width: 280px
+        padding: 30px
+        padding-bottom: 50px
+        flex-direction: column
+        text-align: left
+        background-color: #ffffff
+        &:hover
+          background-color: #c3759e
+          & span, p, a
+            color: #ffffff
+            &:after
+              background-color: #ffffff
+    &-video
+      padding: 30px
+      padding-bottom: 25px
+      max-width: 587px
+      height: 486px
+      background-color: #ffffff
+      &__item
+        display: block
+        position: relative
+      &__link
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        bottom: -18px
+        left: 164px
+        width: 195px
+        height: 47px
+        border-radius: 24px
+        color: #ffffff
+        background-color: #ffffff
+      &__title
+        display: block
+        text-align: center
+        margin-top: 20px
+        margin-bottom: 35
+        font-size: 22px
+        font-weight: 700
+        line-height: 28px
+        color: #454545
+      &-nav
+        display: flex
+        justify-content: center
+        margin-top: 30px
+        font-family: Roboto
+        font-size: 14px
+        font-weight: 700
+        line-height: 24px
+        text-transform: uppercase
+        & a 
+          color: #bcbcbc
+        &__item
+          line-height: 1
+          margin-right: 8px
+          &:first-child
+            padding-right: 10px
+            border-right: 2px solid #bcbcbc
+  &-card
+    &__title
+      max-width: 140px
+      margin-top: 25px
+      margin-bottom: 20px
+      font-size: 22px
+      font-weight: 700
+      line-height: 28px
+      color: #454545
+    &__description
+      margin: 0 0
+      max-width: 170px
+      font-size: 14px
+      font-weight: 400
+      line-height: 24px
+      color: #979797
+    &__btn
+      display: block
+      position: relative
+      margin-top: 30px
+      max-width: 84px
+      font-size: 14px
+      font-weight: 700
+      line-height: 24px
+      text-transform: uppercase
+      color: #c3759e
+      cursor: pointer
+      &:after
+        content: ''
+        position: absolute
+        bottom: -8px
+        left: 22%
+        display: block
+        width: 55%
+        height: 2px
+        background-color: #c3759e
+    &__date
+      position: absolute
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      left: 20px
+      top: -20px
+      width: 71px
+      height: 71px
+      text-align: center
+      border-radius: 50%
+      background-color: #c3759e
+      color: #ffffff
+      font-size: 14px
+      font-weight: 700
+      line-height: 17px
+      text-transform: uppercase
+      font-size: 30px
+      &-day 
+        display: block
+        margin-top: 3px
+        margin-bottom: 5px
+      &-month
+        display: block
+        font-size: 14px
+@media (max-width: 1200px)
+  .news
+    &-block
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      &__item
+        margin-bottom: 50px
+        &:last-child
+          margin-bottom: 0
+      &-cards
+        justify-content: space-around
+      &-video
+        margin: auto
+@media (max-width: 992px)
+  .news
+    &-block
+      &-cards 
+        &__item
+          &:hover
+            background-color: #ffffff
+            & span
+              color: #454545
+            & a
+              color: #c3759e
+              &:after
+                background-color: #c3759e
+            & p 
+              color: #979797
+            &:after
+              background-color: #ffffff
+@media (max-width: 768px)
+  .news
+    &__title
+      font-size: 38px
+    &-block
+      &-cards
+        flex-direction: column
+        &__item
+          margin: auto
+          margin-bottom: 40px
+      &-video
+        max-width: 528px
+        &__item
+          & iframe
+            max-width: 400px
+        &__link
+          left: 100px
+@media (max-width: 567px)
+  .news
+    padding: 40px 0
+    &__title
+      font-size: 38px
+    &-block
+      &__item
+        margin-bottom: 10px
+      &-cards
+        flex-direction: column
+        &__item
+          margin: auto
+          margin-bottom: 40px
+      &-video
+        padding-top: 0
+        padding-left: 0
+        padding-right: 0
+        max-width: 330px
+        max-height: 350px
+        &__item
+          & iframe
+            width: 300px
+            height: 200px
+        &__link
+          left: 55px            

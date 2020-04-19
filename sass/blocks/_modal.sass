@@ -1,0 +1,93 @@
+.modal
+  display: none
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  &_active
+    display: flex
+  &-dialog
+    position: relative
+    margin: auto
+    max-width: 450px
+    width: 90%
+    min-width: 200px
+    padding: 40px
+    border-radius: 20px
+    background: #ffffff
+    background: url('../img/modal/background.jpg')
+    &__close
+      position: absolute
+      top: 0
+      right: 0
+      width: 30px
+      height: 30px
+      color: #ffffff
+      border: none
+      border-top-right-radius: 20px
+      border-bottom-left-radius: 10px
+      background-color: $main-color
+      &:hover
+        background-color: lighten($main-color, 10%)
+        cursor: pointer
+    &__title
+      margin-top: 0
+      margin-bottom: 50px
+      font-size: 31px
+      font-weight: 700
+      line-height: 46px
+      color: #ffffff
+      text-align: center
+  &-form
+    text-align: center
+    &__input
+      width: 100%
+      padding: 15px 30px
+      max-width: 300px
+      margin-bottom: 28px
+      border-radius: 20px
+      border: none
+      outline: none
+      &.error
+        display: block
+        margin: auto
+        margin-top: 0px
+        margin-bottom: 0
+    &__button
+      margin-top: 30px
+      margin-left: 5px
+      width: 206px
+      height: 49px
+      border-radius: 25px
+      background-color: #ffffff
+      font-family: Roboto, sans-serif
+      font-size: 14px
+      font-weight: 700
+      line-height: 31px
+      border: none
+      text-transform: uppercase
+      color: #1b1b1b
+      cursor: pointer
+      &:hover
+        background-color: $main-color
+        color: #fff
+@media (max-width: 992px)
+  .modal
+    &-form
+      &__button
+        &:hover
+          background-color: #ffffff
+          color: #1b1b1b
+@media (max-width: 567px)
+  .modal
+    &-dialog
+      padding: 25px
+      &__title
+        margin-bottom: 20px
+        font-size: 23px
+        line-height: normal
+    &-form
+      &__button
+        margin-top: 15px

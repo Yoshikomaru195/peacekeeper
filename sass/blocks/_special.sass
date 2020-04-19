@@ -1,0 +1,113 @@
+.special
+  position: relative
+  padding-top: 230px
+  padding-bottom: 248px
+  background-color: #888888
+  background: url('../img/service/bg.jpg')
+  background-repeat: no-repeat
+  &__main-image
+    position: absolute
+    top: 38px
+    left: -45px
+    bottom: 5px
+    width: 786px
+    background-image: url('../img/service/main-image-bg.png')
+  &-block
+    display: flex
+    width: 100%
+    &__item
+      flex-basis: 50%
+  &__title
+    &-row-1
+      margin: 0
+      font-size: 114px
+      font-weight: 700
+      text-transform: uppercase
+      color: #ffffff
+    &-row-2 
+      margin: 0
+      font-size: 114px
+      line-height: 100px
+      font-weight: 700
+      text-transform: uppercase
+      color: #ffffff
+    &-row-3 
+      margin: 0
+      margin-bottom: 25px
+      color: #ffffff
+      font-size: 62px
+      line-height: 84px
+      font-weight: 700
+      text-transform: uppercase
+  &__subtitle
+    display: block
+    margin-bottom: 15px
+    font-size: 20px
+    font-weight: 400
+    line-height: 31px
+    text-transform: uppercase
+    color: #ffffff
+  &__button
+    margin-left: 5px
+    width: 206px
+    height: 49px
+    border-radius: 25px
+    background-color: #ffffff
+    font-family: Roboto
+    font-size: 14px
+    font-weight: 700
+    line-height: 31px
+    border: none
+    text-transform: uppercase
+    color: #1b1b1b
+    cursor: pointer
+    &:hover
+      background-color: $main-color
+@media (max-width: 1200px)
+  .special
+    padding: 100px 0
+    &__main-image
+      width: 0
+      height: 0
+      background-image: none
+    &-block
+      justify-content: center
+      &__item
+        text-align: center
+        flex-basis: 100%
+        &:first-child
+          flex-basis: 0
+    &__button
+      display: block
+      margin: auto
+@media (max-width: 992px)
+  .special
+    &__button
+      &:hover
+        background-color: #fff
+@media (max-width: 768px)
+  .special
+    &__subtitle
+      font-size: 18px
+    &__title
+      &-row-1
+        font-size: 50px
+      &-row-2
+        font-size: 60px
+      &-row-3
+        font-size: 70px
+@media (max-width: 567px)
+  .special
+    padding: 40px
+    &__subtitle
+      font-size: 15px
+    &__title
+      &-row-1 
+        line-height: normal
+        font-size: 35px
+      &-row-2 
+        line-height: normal
+        font-size: 35px
+      &-row-3
+        line-height: normal
+        font-size: 35px

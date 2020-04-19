@@ -1,0 +1,54 @@
+.thank
+  display: none
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  &_active
+    display: flex
+  &-dialog
+    position: relative
+    margin: auto
+    margin-top: 150px
+    max-width: 450px
+    width: 90%
+    min-width: 200px
+    padding: 40px
+    border-radius: 20px
+    background: #ffffff
+    background: url('../img/modal/background.jpg')
+    &__close
+      position: absolute
+      top: 0
+      right: 0
+      width: 30px
+      height: 30px
+      color: #ffffff
+      border: none
+      border-top-right-radius: 20px
+      border-bottom-left-radius: 10px
+      background-color: $main-color
+      &:hover
+        background-color: lighten($main-color, 10%)
+        cursor: pointer
+    &__title
+      margin-top: 0
+      margin-bottom: 50px
+      font-size: 31px
+      font-weight: 700
+      line-height: 46px
+      color: #ffffff
+      text-align: center
+@media (max-width: 567px)
+  .modal
+    &-dialog
+      padding: 25px
+      &__title
+        margin-bottom: 20px
+        font-size: 23px
+        line-height: normal
+    &-form
+      &__button
+        margin-top: 15px

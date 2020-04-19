@@ -1,0 +1,151 @@
+.footer
+  padding-top: 76px
+  padding-bottom: 35px
+  background-color: #816890
+  &-logo
+    display: flex
+    align-items: flex-end
+    margin-bottom: 22px
+    &__text
+      display: flex
+      flex-direction: column
+    &__image
+      margin-right: 8px
+    &__title
+      display: block
+      margin-bottom: 8px
+      color: #ffffff
+      font-size: 25px
+      font-weight: 700
+      line-height: 15.51px
+      text-transform: uppercase
+    &__subtitle
+      color: #ffffff
+      font-size: 11px
+      font-weight: 400
+      line-height: 16.76px
+      text-transform: uppercase
+      letter-spacing: 1.56px
+  &__line
+    margin-top: 20px
+    margin-bottom: 30px
+    height: 1px
+    background-color: #f7f7f7
+    opacity: 0.04
+  &-creators-block
+    display: flex
+    justify-content: flex-end
+    color: #ffffff
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+  &__creators
+    margin-left: 30px
+  &-block
+    display: flex
+    justify-content: flex-start
+    &__item
+      display: flex
+      flex-direction: column
+      &:last-child
+        flex-basis: 36%
+    &__description
+      margin-right: 90px
+      margin-bottom: 38px
+      max-width: 260px
+      font-size: 15px
+      font-weight: 400
+      line-height: 24px
+      color: #ffffff
+    &__title
+      display: block
+      margin-top: 25px
+      margin-bottom: 45px
+      font-size: 36px
+      font-weight: 400
+      line-height: 19px
+      color: #ffffff
+    &__link img
+      margin-right: 10px
+    &__nav
+      margin-right: 240px
+      font-size: 14px
+      font-weight: 700
+      line-height: 54px
+      color: #ffffff
+    &__services
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      font-size: 14px
+      font-weight: 700
+      line-height: 54px
+      color: #ffffff
+  &-service-block
+    display: flex
+    justify-content: flex-start
+    flex-direction: column
+@media (max-width: 1200px)
+  .footer
+    &-block
+      flex-wrap: wrap
+      &__title
+        margin-bottom: 60px
+      &__nav
+        margin-bottom: 20px
+        line-height: normal
+      &__item
+        margin-bottom: 50px
+@media (max-width: 768px)
+  .footer
+    padding-top: 40px
+    padding-bottom: 40px
+    &-service-block
+      margin-right: 40px
+    &__line
+      margin: 20px 0
+    &-logo
+    &-block
+      flex-direction: column
+      &__item
+        max-width: 400px
+        flex-basis: 100%
+        margin-bottom: 10px
+      &__description
+        margin-right: 0
+        margin-bottom: 20px
+      &__link
+        margin-bottom: 20px
+      &__title
+        margin-bottom: 20px
+        font-size: 28px
+      &__nav
+        max-width: 100px
+        margin-right: 0
+        margin-bottom: 15px
+      &__services
+        flex-basis: 330px
+        justify-content: flex-start
+    &-service__item
+      line-height: normal
+    &-creators
+      &-block
+        flex-wrap: wrap
+        justify-content: left
+        font-size: 12px
+@media (max-width: 768px)
+  .footer
+    &-block
+      &__services
+        flex-basis: 0
+    &-service-block
+
+@media (max-width: 567px)
+  .footer
+    &-creators
+      &-block
+        justify-content: space-between
+    &__creators
+      margin-left: 0
+      &__item
+        flex-basis: 100%  

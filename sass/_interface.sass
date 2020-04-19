@@ -1,0 +1,43 @@
+$transition-duration: 0.5s
+*
+  box-sizing: border-box
+a 
+  text-decoration: none
+  outline: none
+  cursor: pointer
+button
+  outline: none
+#toggle
+  display: none
+body
+  font-family: 'Roboto', sans-serif
+label
+  color: #ffffff
+.error
+  display: block
+  margin-top: 0
+  margin-bottom: 10px
+.container
+  position: relative
+  width: 1200px
+  margin: auto
+.button
+  max-width: 206px
+  height: 49px
+  border-radius: 25px
+  font-family: Roboto, sans-serif
+  border: none
+  outline: none
+  cursor: pointer
+  text-transform: uppercase
+@media (max-width: 1200px)
+  .container
+    width: 760px
+@media (max-width: 768px)
+  .container
+    max-width: 580px
+    width: 90%
+@media (max-width: 567px)
+  .container
+    max-width: 330px
+    width: 88%

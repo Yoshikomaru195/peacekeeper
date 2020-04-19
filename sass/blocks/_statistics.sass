@@ -1,0 +1,48 @@
+.statistics
+  padding-top: 140px
+  padding-bottom: 125px
+  color: #ffffff
+  background-color: #282828
+  &-block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+      display: flex
+      justify-content: center
+      flex-direction: column
+      text-align: center
+      flex-basis: 21%
+    &__statistic
+      margin-bottom: 22px
+      font-size: 54px
+      font-weight: 700
+      line-height: 28px
+      color: #816890
+      &-tag 
+        font-size: 20px
+        font-weight: 400
+        line-height: 28px
+    &__icon
+      margin-bottom: 25px
+@media (max-width: 768px)
+  .statistics
+    padding-top: 40px
+    padding-bottom: 0
+    &-block
+      &__item
+        margin-bottom: 40px
+        flex-basis: 50% 
+      &__statistic
+        font-size: 40px
+@media (max-width: 567px)
+  .statistics
+    &-block
+      &__item
+        margin-bottom: 60px
+        flex-basis: 100% 
+      &__icon
+        margin-bottom: 10px
+      &__statistic
+        margin-bottom: 10px
+        font-size: 40px

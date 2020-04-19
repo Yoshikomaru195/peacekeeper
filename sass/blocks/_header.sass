@@ -1,0 +1,273 @@
+.nav
+  display: none
+.button-toggle
+  display: none
+.login
+  padding-top: 8px
+  padding-bottom: 8px
+  background-color: #f7f7f7
+  &-block
+    display: flex
+    justify-content: space-between
+    background-color: #f7f7f7
+  &-contacts
+    display: flex
+    font-size: 15px
+    font-weight: 400
+    line-height: 19px
+    &__item
+      display: flex
+      align-items: center
+      &:first-child
+        margin-right: 40px
+    &__icon
+      margin-top: 3px
+      margin-right: 10px
+    &__phone
+      color: $text-color
+      font-weight: bold
+      text-decoration: none
+    &__address
+      color: $text-color
+  &-login
+    margin-top: 3px
+    display: flex
+    justify-content: center
+    font-size: 15px
+    font-weight: 700
+    line-height: 19px
+  &__login
+    padding-right: 10px
+    line-height: normal
+    border-right: 1px solid #bcbcbc
+    font-weight: bold
+    color: black
+  &__sign-up
+    padding-left: 10px
+    font-weight: bold
+    color: black
+.navbar
+  padding-top: 16px
+  padding-bottom: 35px
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-call
+    &__icon
+      margin-right: 2px
+      margin-top: 13px
+      padding: 13px
+      border-radius: 50%
+      background-color: $main-color
+      &:hover
+        background-color: lighten($main-color, 10%)
+  &-logo
+    display: flex
+    align-items: flex-end
+    flex-basis: 30%
+    &__image
+      margin-right: 10px
+    &__title
+      display: block
+      margin-left: -1px
+      margin-bottom: 9px
+      font-size: 31px
+      font-weight: 700
+      line-height: 19px
+      color: $text-color
+      text-transform: uppercase
+    &__subtitle
+      display: block
+      color: $text-color
+      font-size: 14px
+      font-weight: 400
+      line-height: 20.3px
+      text-transform: uppercase
+      letter-spacing: 1.56px
+  &-menu
+    display: flex
+    flex-wrap: wrap
+    margin-top: 14px
+    font-size: 14px
+    font-weight: 700
+    line-height: 19px
+    flex-basis: 52%
+    text-transform: uppercase
+    &__item
+      position: relative
+      margin-right: 32px
+      color: #5e5e5e
+      &:last-child
+        margin-right: 0
+      &-active
+        color: #c1759d
+        &:after
+          content: ''
+          position: absolute
+          bottom: -12px
+          left: 20%
+          display: block
+          width: 60%
+          height: 2px
+          background-color: #c3759e
+      &:hover
+        color: #c1759d
+        &:after
+          content: ''
+          position: absolute
+          bottom: -12px
+          left: 20%
+          display: block
+          width: 60%
+          height: 2px
+          background-color: #c3759e
+@media (max-width: 1200px)
+  .navbar
+    &-logo
+      flex-basis: 55%
+    &-menu
+      justify-content: space-between
+      margin-top: 30px
+      font-size: 14px
+      font-weight: 700
+      line-height: 19px
+      &__item
+        flex-basis: 100px
+        margin-right: 0
+        margin-bottom: 5px
+        &-active
+          color: #c1759d
+          &:after
+            content: ''
+            position: absolute
+            bottom: -1px
+            left: 0%
+            display: block
+            width: 60%
+            height: 2px
+            background-color: #c3759e
+        &:hover
+          &:after
+            content: ''
+            position: absolute
+            bottom: -1px
+            left: 0%
+            display: block
+            width: 60%
+            height: 2px
+            background-color: #c3759e
+    &-call
+      &__icon
+        margin-top: 28px
+@media (max-width: 992px)
+  .navbar
+    &-call
+      &__icon
+        &:hover
+          background-color: lighten($main-color, 0%)
+    &-menu
+      &__item
+        &-active
+          color: #5e5e5e
+          &:hover
+            color: #5e5e5e
+          &:after
+            content: ''
+            position: absolute
+            bottom: -1px
+            left: 0%
+            display: block
+            width: 0
+            height: 2px
+            background-color: #c3759e
+        &:hover
+          color: #5e5e5e
+          &:after
+            content: ''
+            position: absolute
+            bottom: -1px
+            right: 0
+            display: none
+            width: 60%
+            height: 2px
+            background-color: #c3759e
+          &:before
+            content: ''
+            position: absolute
+            bottom: -1px
+            right: 0
+            display: none
+            width: 40%
+            height: 2px
+            background-color: #c3759e
+@media (max-width: 768px)
+  .navbar
+    &-call
+      display: none
+    &-block
+    &-logo
+      justify-content: center
+      flex-direction: column
+      flex-basis: 30%
+      &__text
+        display: block
+        margin: auto
+      &__image
+        margin: auto
+      &__title
+        margin-bottom: 0px
+        font-size: 20px
+        font-weight: 700
+        line-height: normal
+      &__subtitle
+        font-size: 10px     
+        line-height: normal
+        letter-spacing: normal      
+    &-menu
+      display: flex
+      flex-basis: 70%
+      justify-content: flex-end
+      &__item
+        flex-basis: 120px
+        font-size: 13px
+        margin-left: 0
+        margin-right: 0
+        text-align: center
+  .login
+    &-contacts
+      font-size: 12px
+@media (max-width: 567px)
+  .button-toggle
+    display: block
+  .nav
+    display: inline-block
+  .login
+    display: none
+    &-contacts
+      display: none
+    &-login
+      width: 100%
+      justify-content: space-between
+    &__login
+      border: none
+  .navbar
+    &-logo
+      max-width: 100%
+      &__title
+        margin-left: -1px
+        margin-bottom: 9px
+        font-size: 31px
+        font-weight: 700
+        line-height: 19px
+        color: $text-color
+      &__subtitle
+        font-size: 14px
+        font-weight: 400
+        line-height: 20.3px
+        letter-spacing: 1.3px
+    &-block
+      justify-content: center
+    &-menu
+      display: none
+      
